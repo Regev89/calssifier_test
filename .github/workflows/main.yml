@@ -15,5 +15,5 @@ jobs:
           lfs: true
       - name: Push to hub
         env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_TOKEN: ${{ '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' }}
         run: git push https://Regev89:$HF_TOKEN@huggingface.co/spaces/Regev89/classifier_test main
