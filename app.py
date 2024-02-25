@@ -11,7 +11,7 @@ image = gr.Image()
 label = gr.Label()
 examples = ['examples/grizzly.jpg', 'examples/black.jpg', 'examples/teddy.jpg']
 
-model = load_learner('export.pkl')
+model = load_learner('bears.pkl')
 
 intf = gr.Interface(fn=lambda image: "grizzly bear",
                     inputs=image, outputs=label, examples=examples)
